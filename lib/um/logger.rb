@@ -6,7 +6,7 @@ require 'forwardable'
 module UM
   class Logger
 
-    if ENV.fetch("UM_ENV") == "development"
+    if ENV.fetch("UM_ENV", "development") == "development"
       @log       = ::Logger.new(STDOUT)
       @log.level = ::Logger::DEBUG
     else

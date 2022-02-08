@@ -14,7 +14,7 @@ module UM
         name, last_name = email_name.split(".")
 
         message         = <<-MESSAGE_END
-From: #{ENV['UM_FROM_NAME']]} <#{from_email}>
+From: #{ENV['UM_FROM_NAME']} <#{from_email}>
 To: #{name} #{last_name.nil? ? "" : last_name} <#{email}>
 Subject: Your AWS Credentials
 
