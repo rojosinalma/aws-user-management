@@ -1,9 +1,9 @@
 aws-users-management
 ---
 
-This repository creates an AWS Login Profile with a random password and emails it to the users.
+Mail AWS users a random securely generated password. 
 
-It only checks for users that have a username that has an email structure (because the username is also where we send the email), it weeds out the ones without passwords, but only if it has never had one. Users that had a password at some point and for whatever reason now don't, will not be affected by this.
+NOTE: You have to create the user through other means (i.e: Terraform)
 
 ## Requirements:
 
